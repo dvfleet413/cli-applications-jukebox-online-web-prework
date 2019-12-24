@@ -51,10 +51,13 @@ def run(songs)
   while command != "exit" do
     if command == "list"
       list(songs)
+      command = nil
     elsif command == "help"
        help 
+       command = nil
     elsif command == "play"
       play(songs)
+      command = nil
     end
   end
 end
